@@ -4,6 +4,7 @@ import streamlit as st
 
 vehicles=pd.read_csv('vehicles_us.csv')
 
+st.header('Distribution of Car Prices')
 fig1 = px.histogram(vehicles, x='price', title='Distribution of Price')
 st.plotly_chart(fig1)
 
