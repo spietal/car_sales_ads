@@ -16,9 +16,9 @@ show_price_scatter = st.checkbox('Show Price vs. Days on Market')
 
 if show_price_scatter:
     # Scatter plot for Price vs. Days on the Market
-    fig = px.scatter(df, x='price', y='days_listed', title='Price vs. Days on Market')
+    fig = px.scatter(vehicles, x='price', y='days_listed', title='Price vs. Days on Market')
     st.plotly_chart(fig)
 else:
     # Scatter plot for Odometer vs. Days on the Market
-    fig = px.scatter(df, x='odometer', y='days_listed', title='Odometer vs. Days on Market')
+    fig = px.scatter(vehicles, x='odometer', y='days_listed', title='Odometer vs. Days on Market')
     st.plotly_chart(fig)
